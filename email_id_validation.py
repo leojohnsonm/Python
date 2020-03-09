@@ -1,5 +1,21 @@
+#this code fetches the email only 
 import re
-a = "johns@gmail.com7708955853leo@yahoo.com96599527749944337977leo@yahoo.com"
-x = re.findall("[a-z]*\d+@gmail.com|[a-z]+@yahoo.com|[a-z]+@outlook.com|[a-z]+@hotmail.com|[6-9]\d{9}",a)
+a = "123johns123@gmail.com123"
+x = re.findall("[a-z]+\d+@gmail.com",a)
 print(x)
+exit()
+
+
+#this code fetches both mail and  mobile no 
+import re
+a = "johns123@gmail.comleo123@yahoo.com770895585396599527749944337977leo123@hotmail.com"
+x = re.findall("[a-z]+\d+@gmail.com|[a-z]+\d+@yahoo.com|[a-z]+\d+@outlook.com|[a-z]+\d+@hotmail.com|[6-9]\d{9}",a)
+print(x)
+exit()
+
+
+
+
+
+
 
